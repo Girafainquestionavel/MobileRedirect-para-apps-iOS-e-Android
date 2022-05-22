@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css">
+
+    <title>Teste de Redirecionamento</title>
+</head>
+
+<body class="body">
+    <style>
+        body{
+            background-color: #21cbd4;
+        }
+        .container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .h2{
+            font-size: 25px;
+            color: #ffffff;
+            font-family: 'Sora', sans-serif;
+        }
+
+        .buttonbaixar {
+            background-color: #000000;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 10px;
+          
+        }
+       
+    </style>
+
+    <h2 class="h2">Redirecionamento de Lojas</h2>
+
+<div style="padding: 55px;" align="center">
+   <button id="mobile" class="buttonbaixar" style="border: 25px">Baixe o app</button>
+</div>
+
+  
+    
+    <script>
+        var mobile
+        mobile = iOS()  ? 'ios' : 'android';
+        if(mobile == 'ios'){
+            document.getElementById('mobile').href = 'https://apps.apple.com/br/app/google-maps-tr%C3%A2nsito-comida/id585027354';
+        }else{
+            document.getElementById('mobile').href = 'https://play.google.com/store/apps/details?id=com.lojavirtual.produtos';
+        }
+
+    </script>
+</body>
+</html>
