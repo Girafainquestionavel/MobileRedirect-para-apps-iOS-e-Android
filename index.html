@@ -65,17 +65,17 @@
     
     <script>
        var mobile
-         mobile = document.getElementById("mobile");
-        if (mobile.addEventListener) {
-            mobile.addEventListener("click", function(){
-                window.location.href = "https://play.google.com/store/apps/details?id=com.avarismotorista&hl=pt-BR";
-            });
-        } else if (mobile.attachEvent) {
-            mobile.attachEvent("onclick", function(){
-                window.location.href = "https://apps.apple.com/br/app/google-maps-tr%C3%A2nsito-comida/id585027354";
-            });
-        }
-    
+       var iOS = navigator.userAgent.match(/(iPad|iPhone|iPod)/g) ? true : false;
+       var Android = navigator.userAgent.match(/Android/g) ? true : false;
+         if (iOS) {
+            mobile = "ios";
+            window.location.href = "https://apps.apple.com/br/app/google-maps-tr%C3%A2nsito-comida/id585027354";
+         }
+         else if (Android) {
+            mobile = "android";
+            window.location.href = "https://play.google.com/store/apps/details?id=com.avarismotorista&hl=pt-BR";
+         }
+         
 
     </script>
 </body>
