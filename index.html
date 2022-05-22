@@ -19,7 +19,12 @@
 <body class="body">
     <style>
         body{
-            background-color: #21cbd4;
+            background: rgba(7, 4, 4, 0.257);
+            animation: move 5s infinite;    
+        }
+        @keyframes move {
+            from {background-color: rgba(0, 0, 0, 0.233);} 
+            to   {background-color: rgb(24, 104, 190);}
         }
         .container{
             width: 100%;
@@ -27,27 +32,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 100px;
         }
     
         .h2{
             font-size: 25px;
-            color: #ffffff;
+            color: #F8F8F8;
             font-family: 'Sora', sans-serif;
             text-align: center;
-        }
-
-        .buttonbaixar {
-            background-color: #000000;
-            color: white;
-            padding: 15px 32px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 16px;
-            font-family: 'Sora', sans-serif;
-            margin: 4px 2px;
-            cursor: pointer;
-            border-radius: 45px;
         }
 
         
@@ -57,12 +49,17 @@
         
        
     </style>
+    <div class="container">
 
-    <h2 class="h2">Redirecionamento de Lojas</h2>
+        <h2 class="h2">Redirecionando...</h2>
 
-<div style="padding: 55px;" align="center">
+    </div>
+
+   
+
+<!--<div style="padding: 55px;" align="center">
    <button  id="isMobile" class="buttonbaixar">Baixar App</button>
-</div>
+</div> -->
 
   
     
